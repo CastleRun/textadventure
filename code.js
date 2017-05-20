@@ -17,7 +17,7 @@ function loadDoc(fname){
   return fileObj;
 }
 
-doNothing(v){
+function doNothing(v){
   return undefined;
 }
 
@@ -43,8 +43,8 @@ function enter(text){
 }
 
 function Handle(e, text){
+  e.preventDefault();
   if(e.keyCode=13){
-    e.preventDefault();
     
     enter(text);
   }
